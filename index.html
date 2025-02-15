@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+        #loading {
+            font-size: 24px;
+        }
+        #hacked {
+            display: none;
+            text-align: center;
+        }
+        h1 {
+            color: lime; /* متن "شما هک شدید!" سبز */
+        }
+        .info {
+            color: white;
+            font-size: 18px;
+        }
+        .warning {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">در حال بارگذاری...</div>
+    <div id="hacked">
+        <h1>🚨 شما هک شدید! 🚨</h1>
+        <p class="info">
+            <b>نام:</b> یعقوب <br>
+            <b>نام خانوادگی:</b> ایرانی <br>
+            <b>کد ملی:</b> ********** <br>
+            <b>شماره تلفن:</b> 09185973260
+        </p>
+        <p class="warning">⚠ اطلاعات شما در دسترس ماست ⚠</p>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("hacked").style.display = "block";
+        }, 2000); // تغییر تاخیر به 2 ثانیه
+    </script>
+</body>
+</html>
